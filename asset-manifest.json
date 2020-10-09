@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-app-phonebook/static/css/main.7b1d56c8.chunk.css",
-    "main.js": "/react-app-phonebook/static/js/main.39646c07.chunk.js",
-    "main.js.map": "/react-app-phonebook/static/js/main.39646c07.chunk.js.map",
+    "main.js": "/react-app-phonebook/static/js/main.64cb1f65.chunk.js",
+    "main.js.map": "/react-app-phonebook/static/js/main.64cb1f65.chunk.js.map",
     "runtime-main.js": "/react-app-phonebook/static/js/runtime-main.86e5ed6f.js",
     "runtime-main.js.map": "/react-app-phonebook/static/js/runtime-main.86e5ed6f.js.map",
     "static/css/2.8aa5a7f8.chunk.css": "/react-app-phonebook/static/css/2.8aa5a7f8.chunk.css",
     "static/js/2.014c0f99.chunk.js": "/react-app-phonebook/static/js/2.014c0f99.chunk.js",
     "static/js/2.014c0f99.chunk.js.map": "/react-app-phonebook/static/js/2.014c0f99.chunk.js.map",
     "index.html": "/react-app-phonebook/index.html",
-    "precache-manifest.2537438168ddc4a6fe9bf4db49bd1ce6.js": "/react-app-phonebook/precache-manifest.2537438168ddc4a6fe9bf4db49bd1ce6.js",
+    "precache-manifest.64e6fdea11bef6d49dacf208c0e89ee1.js": "/react-app-phonebook/precache-manifest.64e6fdea11bef6d49dacf208c0e89ee1.js",
     "service-worker.js": "/react-app-phonebook/service-worker.js",
     "static/css/2.8aa5a7f8.chunk.css.map": "/react-app-phonebook/static/css/2.8aa5a7f8.chunk.css.map",
     "static/css/main.7b1d56c8.chunk.css.map": "/react-app-phonebook/static/css/main.7b1d56c8.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.8aa5a7f8.chunk.css",
     "static/js/2.014c0f99.chunk.js",
     "static/css/main.7b1d56c8.chunk.css",
-    "static/js/main.39646c07.chunk.js"
+    "static/js/main.64cb1f65.chunk.js"
   ]
 }
