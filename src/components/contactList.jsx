@@ -70,30 +70,33 @@ const ContactList = () => {
     return (
         <div>       
             <div className="text-center">
+                <p className="small text-danger font-weight-lighter	">Note: If browsing on small mobile screen, table could be scroll horizontally. Action button (Edit, Delete) located at the last column of the table</p>
                 <Link to={"/list/new"}><button type="button" className="w-50 m-4 btn btn-success clearfix">Create New Contact</button></Link><br />
-                <table className="table text-left">
-                    <thead>
-                        <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">PhoneNumber</th>
-                            <th scope="col">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {contacts.map(contact => (
-                            <tr key={contact.id}>
-                                <th scope="row">{contact.id}</th>
-                                <td>{contact.name}</td>
-                                <td>{contact.phone}</td>
-                                <td>
-                                    <Link to={`/list/${contact.id}`}><button type="button" className="btn btn-primary mr-2">Edit</button></Link>
-                                    <button type="button" onClick={confirmDelete.bind(this, contact.id)} className="btn btn-danger">Delete</button>
-                                </td>
+                <div className="table-responsive">
+                    <table className="table text-left">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">PhoneNumber</th>
+                                <th scope="col">Action</th>
                             </tr>
-                        ))}
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            {contacts.map(contact => (
+                                <tr key={contact.id}>
+                                    <th scope="row">{contact.id}</th>
+                                    <td>{contact.name}</td>
+                                    <td>{contact.phone}</td>
+                                    <td>
+                                        <Link to={`/list/${contact.id}`}><button type="button" className="btn btn-primary mb-1">Edit</button></Link> {'\u00A0'}
+                                        <button type="button" onClick={confirmDelete.bind(this, contact.id)} className="btn btn-danger mb-1">Delete</button>
+                                    </td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
 
             </div>
             
