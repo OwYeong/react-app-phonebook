@@ -70,7 +70,7 @@ const ContactList = () => {
     return (
         <div>       
             <div className="text-center">
-                <Link to="/new"><button type="button" className="w-50 m-4 btn btn-success clearfix">Create New Contact</button></Link><br />
+                <Link to={"/list/new"}><button type="button" className="w-50 m-4 btn btn-success clearfix">Create New Contact</button></Link><br />
                 <table className="table text-left">
                     <thead>
                         <tr>
@@ -87,7 +87,7 @@ const ContactList = () => {
                                 <td>{contact.name}</td>
                                 <td>{contact.phone}</td>
                                 <td>
-                                    <Link to={`/${contact.id}`}><button type="button" className="btn btn-primary mr-2">Edit</button></Link>
+                                    <Link to={`/list/${contact.id}`}><button type="button" className="btn btn-primary mr-2">Edit</button></Link>
                                     <button type="button" onClick={confirmDelete.bind(this, contact.id)} className="btn btn-danger">Delete</button>
                                 </td>
                             </tr>

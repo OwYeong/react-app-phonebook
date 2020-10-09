@@ -36,7 +36,8 @@ const EditContact = ({ match }) => {
                         //if invalid
                         if (!isNewContact) {
                             //If doc ID provided does not exist in fire store, redirect user to new contact page
-                            window.location.href = "/new";
+                            window.location.href = process.env.PUBLIC_URL + "/list/new";
+                            
                         }
                     }
                     
@@ -193,9 +194,9 @@ const EditContact = ({ match }) => {
                     </div>
                 </form>
                 <button onClick={handleSubmit} className="btn btn-success mr-2">{isNewContact ? "Create New Contact" : "Edit Contact"}</button>
-                <Link to="/"><button className="btn btn-secondary">Cancel</button></Link>
+                <Link to={"/"}><button className="btn btn-secondary">Cancel</button></Link>
             </div>
-            <SweetAlert show={okModal["showOrNot"]} success title={okModal["title"] || ""} onConfirm={() => { window.location.href = "/" }} >
+            <SweetAlert show={okModal["showOrNot"]} success title={okModal["title"] || ""} onConfirm={() => { window.location.href = process.env.PUBLIC_URL + "/" }} >
                 {okModal["desc"] || ""}
             </SweetAlert>
             <SweetAlert show={errorModal["showOrNot"]} danger title={errorModal["title"] || ""} onConfirm={()=>{setErrorModal({ showOrNot: false })}}>
