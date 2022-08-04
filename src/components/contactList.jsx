@@ -70,6 +70,41 @@ const ContactList = () => {
     return (
         <div>       
             <div className="text-center">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Link</th>
+                            <th>Expectation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>App Link</td>
+                            <td><a href="https://payment.tngdigital.com.my/sc/bDLnsUR1ws">https://payment.tngdigital.com.my/sc/bDLnsUR1ws</a>
+                            </td>
+                            <td>Open in app, native static payment screen.</td>
+                        </tr>
+                        <tr>
+                            <td>Deep Link</td>
+                            <td><a href="tngdwallet://client/dl/paymentlink/bDLnsUR1ws">tngdwallet://client/dl/paymentlink/bDLnsUR1ws</a>
+                            </td>
+                            <td>Open in app if installed, native static payment screen.</td>
+                        </tr>
+                        <tr>
+                            <td>One Link Wrap Deep Link</td>
+                            <td><a href="https://onelink.tngd.my/8mmV/ag6xnwga">https://onelink.tngd.my/8mmV/ag6xnwga</a>
+                            </td>
+                            <td>Open in app if installed, native static payment screen.</td>
+                        </tr>
+                        <tr>
+                            <td>One Link Wrap App Link</td>
+                            <td><a href="https://onelink.tngd.my/8mmV/e57cerer">https://onelink.tngd.my/8mmV/e57cerer</a>
+                            </td>
+                            <td>Open in app if installed, native static payment screen.</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <p className="small text-danger font-weight-lighter	">Note: If browsing on small mobile screen, table could be scroll horizontally. Action button (Edit, Delete) located at the last column of the table</p>
                 <Link to={"/list/new"}><button type="button" className="w-50 m-4 btn btn-success clearfix">Create New Contact</button></Link><br />
                 <div className="table-responsive">
